@@ -131,7 +131,7 @@ fig.layout.xaxis.fixedrange = True
 #t0 = now.strftime(%H:%M)
 
 t0=pd.to_datetime(2019_05_13_06, format='%Y%m%d%H')
-fig.add_vline(x=t0, line_width=3, line_dash='dash', line_color='red')
+#fig.add_vline(x=t0, line_width=3, line_dash='dash', line_color='red')
 
 
 st.plotly_chart(fig, config=config)
