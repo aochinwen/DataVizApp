@@ -80,7 +80,13 @@ stand_size=st.sidebar.slider("size of stand point", 0,10, value=5)
 
 maps.update_layout(mapbox_style='mapbox://styles/ray11132002/ckph07pq60bd417phjepn5sc3', mapbox_accesstoken=token2)
 maps.update_layout(autosize=True, height=800)
-maps.update_layout(margin=dict(l=5,b=5))
+maps.update_layout(margin=dict(l=5,r=5,b=5))
+maps.update_layout( legend=dict(
+	yanchor ='top',
+	y=0.99,
+	xanchor ='left',
+	x=0.01
+	))
 # maps.update_mapboxes(pitch=map_pitch, bearing=map_tilt)
 st.plotly_chart(maps, use_container_width=True)
 
